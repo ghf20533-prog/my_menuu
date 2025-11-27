@@ -1,331 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>سایت رستورانی</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- لینک فونت آیکون (FontAwesome) -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-    </head>
-    <body>
-        <!-- هدر -->
-        <!DOCTYPE html>
-        <html lang="fa">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport"
-                    content="width=device-width, initial-scale=1.0">
-                <title>سبد خرید با جاوااسکریپت</title>
-                <link rel="stylesheet" href="styles.css">
-                <script src="https://kit.fontawesome.com/a076d05399.js"
-                    crossorigin="anonymous"></script>
-            </head>
-            <body>
-
-                <header>
-                    <nav class="navbar">
-                        <div class="logo">
-                            <h1>آذرخش</h1>
-                        </div>
-                        <ul class="nav-links">
-                            <li><a href="#">بلاگ</a></li>
-                            <li><a href="#">منو</a></li>
-                            <li><a href="#">درباره ما</a></li>
-                        </ul>
-                        <div class="icons">
-                            <!-- آیکون سبد خرید -->
-                            <div class="cart-icon" onclick="toggleCart()">
-                                🛒 <span id="cart-count">۰</span>
-                            </div>
-
-                            <!-- سبد خرید -->
-                            <div class="cart-dropdown">
-                                <div class="cart-header">
-                                    <h3>سبد خرید</h3>
-                                    <button class="close-cart"
-                                        onclick="toggleCart()">✖</button>
-                                </div>
-                                <ul id="cart-items" class="cart-items"></ul>
-                                <div class="cart-footer">
-                                    <p>جمع کل: <span id="cart-total">۰</span>
-                                        تومان</p>
-                                    <button class="checkout-btn">پرداخت</button>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </header>
-
-                <!-- هرو -->
-                <section class="hero">
-                    <div class="container">
-                        <div class="hero-content">
-
-                            <div class="hero-image">
-                                <img data-aos="zoom-in" src="./assests/images/home.png"
-                                    alt="برگر آذرخش">
-                            </div>
-                            <div data-aos="fade-right" class="hero-text">
-                                <h2>برگر آذرخش</h2>
-                                <p> بهترین برگر های تهران فقط در رستوران ما</p>
-                                <button>ثبت سفارش</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- menu -->
-                <section data-aos="zoom-in-left" class="menu container">
-
-                    <h2>منوی آذرخش</h2>
-                    <div class="grid-menu">
-                        <div>
-                            <img src="./assests/images/feature-menu-6.png" />
-                            <p>پیتزا</p>
-                        </div>
-                        <div>
-                            <img src="./assests/images/feature-menu-5.png" />
-                            <p>ماهی</p>
-                        </div>
-                        <div>
-                            <img src="./assests/images/feature-menu-4.png" />
-                            <p>نوشیدنی</p>
-                        </div>
-                        <div>
-                            <img src="./assests/images/feature-menu-3.png" />
-                            <p>مرغ</p>
-                        </div>
-                        <div>
-                            <img src="./assests/images/feature-menu-2.png" />
-                            <p>برگر</p>
-                        </div>
-                        <div>
-                            <img src="./assests/images/feature-menu-1.png" />
-                            <p>باربیکیو</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- featured -->
-
-                <section class="featured">
-                    <h2  data-aos="zoom-in-right" > غذا های ویژه </h2>
-                    <!--search-->
-                    <div  data-aos="zoom-in-right"  >
-                        <input type="text" id="search-box"
-                            placeholder="جستجوی محصول..."
-                            class="search-input">
-
-                    </div>
-                    <div   data-aos="fade-up" class="container">
-                        <div class="featured-grid">
-                            <div class="card" data-name="اسپایسی برگر"
-                                data-price="220000">
-                                <img src="./assests/images/item-1.png" />
-                                <p class="title">اسپایسی برگر</p>
-                                <p class="price">۲۲۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="باربکیو گوسفندی"
-                                data-price="350000">
-                                <img src="./assests/images/item-2.png" />
-                                <p class="title">باربکیو گوسفندی</p>
-                                <p class="price">۳۵۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="برگر گوشت گاو"
-                                data-price="150000">
-                                <img src="./assests/images/item-3.png" />
-                                <p class="title">برگر گوشت گاو</p>
-                                <p class="price">۱۵۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="ماهی ویژه"
-                                data-price="150000">
-                                <img src="./assests/images/item-4.png" />
-                                <p class="title">ماهی ویژه</p>
-                                <p class="price">۱۵۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="پیتزا مخصوص"
-                                data-price="120000">
-                                <img src="./assests/images/item-5.png" />
-                                <p class="title">پیتزا مخصوص</p>
-                                <p class="price">۱۲۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="متابرگر"
-                                data-price="180000">
-                                <img src="./assests/images/item-6.png" />
-                                <p class="title">متابرگر</p>
-                                <p class="price">۱۸۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="مرغ با باکون"
-                                data-price="150000">
-                                <img src="./assests/images/item-7.png" />
-                                <p class="title">مرغ با باکون</p>
-                                <p class="price">۱۵۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                            <div class="card" data-name="مرغ لطیف"
-                                data-price="110000">
-                                <img src="./assests/images/item-8.png" />
-                                <p class="title">مرغ لطیف</p>
-                                <p class="price">۱۱۰٬۰۰۰ تومان</p>
-                                <button class="add-to-cart">ثبت سفارش</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="menu-board">
-                    <h2 data-aos="zoom-in-right"   class="title">تابلو غذاهای آذرخش</h2>
-                    <div class="menu-grid">
-                        <div class="menu-category">
-                            <h3 class="category-title">برگر</h3>
-                            <div data-aos="zoom-in-right" class="menu-item">
-                                <img    src="./assests/images/burger-1.png"
-                                    alt="Food 1" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> متابرگر</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div data-aos="zoom-in-right" class="menu-item">
-                                <img    src="./assests/images/burger-2.png"
-                                    alt="Food 2" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> اسپایسی برگر</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div data-aos="zoom-in-right"  class="menu-item">
-                                <img   src="./assests/images/burger-3.png"
-                                    alt="Food 3" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> برگر مخصوص</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div  data-aos="zoom-in-right" class="menu-item">
-                                <img   src="./assests/images/burger-4.png"
-                                    alt="Food 4" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> برگر گوشت</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-category">
-                            <h3 class="category-title">گوشت</h3>
-                            <div data-aos="zoom-in-left" class="menu-item">
-                                <img   src="./assests/images/bbq-1.png"
-                                    alt="Food 5" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> گوشت گوسفندی</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div data-aos="zoom-in-left" class="menu-item">
-                                <img  src="./assests/images/bbq-2.png"
-                                    alt="Food 6" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> مرغ</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div data-aos="zoom-in-left" class="menu-item">
-                                <img  src="./assests/images/bbq-3.png"
-                                    alt="Food 7" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> گوشت گاو</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                            <div data-aos="zoom-in-left" class="menu-item">
-                                <img  src="./assests/images/bbq-4.png"
-                                    alt="Food 8" class="food-image" />
-                                <div class="food-details">
-                                    <p class="food-name"> کوچی باربیکیو</p>
-                                    <p class="food-description"> سایز بزرگ و
-                                        متوسط از 180000 تا 220000 تومان</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <div class="comments-section">
-                    <h2>نظرات مشتریان</h2>
-                    <div class="comments-slider">
-                        <div class="comment">
-                            <p>"  غذاهای این رستوران واقعا خوشمزه و با کیفیت هستند. محیط بسیار دلنشین و پرسنل خوش برخورد."</p>
-                            <span>- علی رضایی</span>
-                        </div>
-                        <div class="comment">
-                            <p>"من همیشه برای مهمانی‌های خانوادگی از این رستوران غذا سفارش می‌دم. همه از طعم غذاها راضی هستند."</p>
-                            <span>- زهرا محمدی</span>
-                        </div>
-                        <div class="comment">
-                            <p>" بهترین رستوران در شهر! غذاها تازه و با کیفیت بالا سرو می‌شوند. حتما توصیه میکنم از این تجربه دلپذیر استفاده کنید."</p>
-                            <span>- محسن کریمی</span>
-                        </div>
-                    </div>
-                </div>
-
-                <footer class="footer">
-                    <div class="footer-container">
-                        <h2 class="footer-title">رستوران آذرخش</h2>
-                        <p class="footer-text">تجربه‌ای بی‌نظیر از طعم و
-                            کیفیت</p>
-                        <div class="social-icons">
-                            <a href="#" class="social-link"><i
-                                    class="fab fa-instagram instagram-icon"></i></a>
-                            <a href="#" class="social-link"><i
-                                    class="fab fa-telegram-plane telegram-icon"></i></a>
-                            <a href="#" class="social-link"><i
-                                    class="fab fa-facebook-f facebook-icon"></i></a>
-                            <a href="#" class="social-link"><i
-                                    class="fab fa-x x-icon"></i></a>
-                            <!-- آیکون X -->
-                        </div>
-
-                        <p class="copyright">© 2025 تمامی حقوق محفوظ است |
-                            رستوران آذرخش</p>
-                    </div>
-                </footer>
-
-                <script
-                    src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-                <script
-                    src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/simpleCart/3.0.5/simpleCart.min.js"></script>
-                <script src="app.js"></script>
-
-            </body>
-        </html>
